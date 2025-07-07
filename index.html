@@ -10,7 +10,19 @@
       background: #f5f5f5;
       color: #333;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+    }
+    nav {
+      background-color: #007acc;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
     .container {
       max-width: 800px;
@@ -19,8 +31,9 @@
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 20px;
     }
-    h1 {
+    h1, h2 {
       color: #007acc;
     }
     a {
@@ -33,37 +46,58 @@
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#resume">Resume / Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="#blog">Blog</a>
+  </nav>
+
   <div class="container">
     <h1>Krutika Yawale</h1>
     <p><strong>DevOps | Cloud | Automation Enthusiast</strong></p>
 
-    <div class="section">
+    <div class="section" id="about">
       <h2>About Me</h2>
-      <p>I’m passionate about DevOps, AWS, and infrastructure automation. This is my portfolio website to showcase my resume and projects.</p>
+      <p>I’m passionate about DevOps, AWS, and infrastructure automation. I enjoy solving real-world problems using cloud-native technologies and automation tools.</p>
     </div>
 
-    <div class="section">
-      <h2>Resume</h2>
-      <p><a href="resume.pdf" target="_blank">View / Download Resume</a></p>
+    <div class="section" id="resume">
+      <h2>Resume / Skills</h2>
+      <p><a href="resume.pdf" target="_blank">📄 View / Download Resume</a></p>
+      <ul>
+        <li>⚙️ DevOps Tools: Ansible, Docker, Jenkins, Git, Kubernetes</li>
+        <li>☁️ Cloud Platforms: AWS (EC2, S3, Lambda, RDS, VPC)</li>
+        <li>💻 Programming: Python, Bash, YAML</li>
+        <li>🔒 Security: IAM, SSH, Key-based Auth</li>
+      </ul>
     </div>
 
-    <div class="section">
+    <div class="section" id="projects">
       <h2>Projects</h2>
       <ul>
-        <li><a href="https://github.com/Krutika09/Django-App-Docker" target="_blank">Django-App-Docker</a></li>
-        <li><a href="https://github.com/Krutika09/Cost-Optimization-With-AWS-Lambda" target="_blank">Cost-Optimization-With-AWS-Lambda</a></li>
+        <li><a href="https://github.com/Krutika09/Django-App-Docker" target="_blank">Django App with Docker</a></li>
+        <li><a href="https://github.com/Krutika09/Cost-Optimization-With-AWS-Lambda" target="_blank">AWS Lambda Cost Optimization</a></li>
         <!-- Add more -->
       </ul>
     </div>
 
-    <div class="section">
+    <div class="section" id="contact">
       <h2>Contact</h2>
       <p>
-        📧 Email: krutikayawale2002@gmail.com <br>
-        💼 <a href="https://www.linkedin.com/in/iamkrutikayawale/" target="_blank">LinkedIn</a> <br>
+        📧 Email: <a href="mailto:krutikayawale2002@gmail.com">krutikayawale2002@gmail.com</a><br>
+        💼 <a href="https://www.linkedin.com/in/iamkrutikayawale/" target="_blank">LinkedIn</a><br>
         💻 <a href="https://github.com/Krutika09" target="_blank">GitHub</a>
       </p>
     </div>
+
+    <div class="section" id="blog">
+      <h2>Blog</h2>
+      <p>Coming soon! I’ll be sharing tips and write-ups on AWS, DevOps tools, and automation best practices.</p>
+    </div>
   </div>
+
 </body>
 </html>
